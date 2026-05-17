@@ -14,8 +14,7 @@
         "name": "-File"
       },
       {
-        "source": "string",
-        "name": "creation_produit.ps1"
+        "source": "creation_produit.ps1"
       },
       {
         "source": "string",
@@ -36,8 +35,7 @@
         "name": "-File"
       },
       {
-        "source": "string",
-        "name": "modification_produit.ps1"
+        "source": "modification_produit.ps1"
       },
       {
         "source": "string",
@@ -58,8 +56,28 @@
         "name": "-File"
       },
       {
+        "source": "suppression_produit.ps1"
+      },
+      {
         "source": "string",
-        "name": "suppression_produit.ps1"
+        "name": "-PayloadJson"
+      },
+      {
+        "source": "entire-payload"
+      }
+    ]
+  },
+  {
+    "id": "produit-stock",
+    "execute-command": "/snap/bin/pwsh",
+    "command-working-directory": "/opt/wordpress/pwsh",
+    "pass-arguments-to-command": [
+      {
+        "source": "string",
+        "name": "-File"
+      },
+      {
+        "source": "stock_produit.ps1"
       },
       {
         "source": "string",
