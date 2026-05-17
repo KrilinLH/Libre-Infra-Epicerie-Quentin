@@ -1,0 +1,51 @@
+[
+  {
+    "id": "sync-commande",
+    "execute-command": "/opt/wordpress/pwsh/test_webhook.ps1",
+    "command-working-directory": "/opt/wordpress/pwsh"
+  },
+  {
+    "id": "produit-creation",
+    "execute-command": "/usr/bin/pwsh",
+    "command-working-directory": "/opt/wordpress/pwsh",
+    "pass-arguments-to-command": [
+      {
+        "source": "string",
+        "name": "-File"
+      },
+      {
+        "source": "string",
+        "name": "creation_produit.ps1"
+      },
+      {
+        "source": "string",
+        "name": "-PayloadJson"
+      },
+      {
+        "source": "entire-payload"
+      }
+    ]
+  },
+  {
+    "id": "produit-modification",
+    "execute-command": "/usr/bin/pwsh",
+    "command-working-directory": "/opt/wordpress/pwsh",
+    "pass-arguments-to-command": [
+      {
+        "source": "string",
+        "name": "-File"
+      },
+      {
+        "source": "string",
+        "name": "modification_produit.ps1"
+      },
+      {
+        "source": "string",
+        "name": "-PayloadJson"
+      },
+      {
+        "source": "entire-payload"
+      }
+    ]
+  }
+]
