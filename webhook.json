@@ -47,5 +47,27 @@
         "source": "entire-payload"
       }
     ]
+  },
+  {
+    "id": "produit-suppression",
+    "execute-command": "/snap/bin/pwsh",
+    "command-working-directory": "/opt/wordpress/pwsh",
+    "pass-arguments-to-command": [
+      {
+        "source": "string",
+        "name": "-File"
+      },
+      {
+        "source": "string",
+        "name": "suppression_produit.ps1"
+      },
+      {
+        "source": "string",
+        "name": "-PayloadJson"
+      },
+      {
+        "source": "entire-payload"
+      }
+    ]
   }
 ]
