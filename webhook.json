@@ -6,7 +6,7 @@
   },
   {
     "id": "produit-creation",
-    "execute-command": "/usr/bin/pwsh",
+    "execute-command": "/snap/bin/pwsh",
     "command-working-directory": "/opt/wordpress/pwsh",
     "pass-arguments-to-command": [
       {
@@ -28,7 +28,7 @@
   },
   {
     "id": "produit-modification",
-    "execute-command": "/usr/bin/pwsh",
+    "execute-command": "/snap/bin/pwsh",
     "command-working-directory": "/opt/wordpress/pwsh",
     "pass-arguments-to-command": [
       {
